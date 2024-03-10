@@ -1,0 +1,60 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+@keyframes glassAnimation {
+  0% {
+    backdrop-filter: blur(15px) brightness(120%) contrast(90%);
+  }
+  50% {
+    backdrop-filter: blur(20px) brightness(125%) contrast(85%);
+  }
+  100% {
+    backdrop-filter: blur(15px) brightness(120%) contrast(90%);
+  }
+}
+
+body{
+  background-color:#434344;
+  font-family: "poppins";
+  animation: glassAnimation 8s linear ease-in-out; /* Apply the animation */
+}
+.App {
+  text-align: center;
+  color:#fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper {
+  background: rgba(255, 255, 255, 0.16);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.4px);
+  -webkit-backdrop-filter: blur(7.4px);
+  border: 1px solid rgba(255, 255, 255, 0.13);
+  margin-top: 5rem;
+  padding: 2rem;
+  width: 40rem;
+}
+
+
+input {
+  padding: 1rem 2rem;
+  font-size: 1.4rem;
+  border: none;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  outline: none;
+  width: 350px;
+  border-radius: 30px;
+  background-color: #fff;
+}
+button{
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: #3629ac;
+  color: #fff;
+}
